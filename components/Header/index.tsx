@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { List } from "phosphor-react";
+import { Gear, House, List, Palette, User } from "phosphor-react";
 import { useContext } from "react";
 import styled from "styled-components";
 import LogolabelImage from "../../assets/LogolabelImage";
 import { MenuResponsiveContext } from "../../context/MenuResponsiveContext";
 
 const Wrap = styled.div`
-  background: #252525;
+  background: #161616;
   height: 15vh;
   width: calc(100% - 2rem);
   padding: 0 1rem;
@@ -20,6 +20,7 @@ const Menu = styled.div`
   align-items: center;
   justify-content: center;
   grid-gap: 2rem;
+  font-weight: 700;
 
   @media only screen and (min-width: 768px) {
     display: flex;
@@ -29,6 +30,9 @@ const Menu = styled.div`
     text-decoration: none;
     color: #ffffff;
     font-size: 3vh;
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
 
     &:hover {
       color: #9b90fe;
@@ -60,16 +64,28 @@ const Header = () => {
       <LogolabelImage />
       <Menu>
         <Link href="/">
-          <a id="link">Inicio</a>
+          <a id="link">
+            <House size={20} color="#fafafa" weight="bold" />
+            Inicio
+          </a>
         </Link>
         <Link href="/sobre">
-          <a id="link">Sobre</a>
+          <a id="link">
+            <User size={20} color="#fafafa" weight="bold" />
+            Sobre
+          </a>
         </Link>
         <Link href="/projetos">
-          <a id="link">Projetos</a>
+          <a id="link">
+            <Gear size={20} color="#fafafa" weight="bold" />
+            Projetos
+          </a>
         </Link>
         <Link href="/habilidades">
-          <a id="link">Habilidades</a>
+          <a id="link">
+            <Palette size={20} color="#fafafa" weight="bold" />
+            Habilidades
+          </a>
         </Link>
       </Menu>
     </Wrap>

@@ -2,19 +2,26 @@ import React from "react";
 import styled from "styled-components";
 
 const Main = styled.div`
-  height: calc(68vh - 2rem);
-  width: calc(100% - 2rem);
+  height: 76vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: auto;
   padding: 1rem;
   grid-gap: 1.5rem;
+`;
 
+const WrapCard = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 1rem;
 
   @media only screen and (min-width: 768px) {
-    justify-content: center;
     display: grid;
+    justify-content: center;
     gap: 0 30px;
     grid-template-columns: 180px 180px 180px;
   }
@@ -25,11 +32,10 @@ const Main = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 8vh;
+  font-size: 3rem;
   padding: 1rem 0 0 0;
   text-align: center;
   color: #9b90fe;
-
 `;
 
 const Card = styled.div`
@@ -37,7 +43,7 @@ const Card = styled.div`
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  background: #252525;
+  background: #292929;
   border: 1px solid transparent;
 
   @media only screen and (min-width: 768px) {
@@ -67,26 +73,28 @@ const Card = styled.div`
 const Projetos = () => {
   return (
     <>
-      <Title>PROJETOS</Title>
       <Main>
-        <Card>
-          <a href="">EM BREVE</a>
-        </Card>
-        <Card>
-          <a href="">EM BREVE</a>
-        </Card>
-        <Card>
-          <a href="">EM BREVE</a>
-        </Card>
-        <Card>
-          <a href="">EM BREVE</a>
-        </Card>
-        <Card>
-          <a href="">EM BREVE</a>
-        </Card>
-        <Card>
-          <a href="">EM BREVE</a>
-        </Card>
+        <Title>PROJETOS</Title>
+        <WrapCard>
+          <Card>
+            <a href="">EM BREVE</a>
+          </Card>
+          <Card>
+            <a href="">EM BREVE</a>
+          </Card>
+          <Card>
+            <a href="">EM BREVE</a>
+          </Card>
+          <Card>
+            <a href="">EM BREVE</a>
+          </Card>
+          <Card>
+            <a href="">EM BREVE</a>
+          </Card>
+          <Card>
+            <a href="">EM BREVE</a>
+          </Card>
+        </WrapCard>
       </Main>
     </>
   );

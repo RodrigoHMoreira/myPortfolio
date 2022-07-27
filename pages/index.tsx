@@ -7,7 +7,6 @@ import LinkedinImage from "../assets/LinkedinImage";
 
 const Main = styled.main`
   height: 76vh;
-  width: calc(100% - 2rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +42,7 @@ const WrapCard = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 8vh;
+  font-size: 3rem;
   color: rgba(255, 255, 255, 1);
 
   @media only screen and (min-width: 768px) {
@@ -52,7 +51,7 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h3`
-  font-size: 4vh;
+  font-size: 2rem;
   color: #9b90fe;
 `;
 
@@ -79,7 +78,6 @@ const Card = styled.div`
 `;
 
 const Home = () => {
-
   return (
     <>
       <Main>

@@ -3,6 +3,14 @@ import Link from "next/link";
 import { useContext } from "react";
 import styled from "styled-components";
 import { MenuResponsiveContext } from "../../context/MenuResponsiveContext";
+import {
+  Gear,
+  House,
+  HouseLine,
+  Palette,
+  User,
+  UserFocus,
+} from "phosphor-react";
 
 type MenuResponsiveProps = {
   toggleMenuResponsive: boolean;
@@ -25,6 +33,9 @@ const Menu = styled.div<MenuResponsiveProps>`
     rgba(0, 0, 0, 0.8547794117647058) 65%,
     rgba(0, 0, 0, 0.6755077030812324) 100%
   );
+  font-size: 1.1rem;
+  font-weight: 700;
+
   z-index: 10;
 
   @media only screen and (min-width: 768px) {
@@ -38,6 +49,8 @@ const Menu = styled.div<MenuResponsiveProps>`
     color: #ffffff;
     padding: 1.5rem;
     transition: 0.1s;
+    display: flex;
+    grid-gap: 5px;
   }
 `;
 
@@ -52,16 +65,28 @@ const MenuResponsive = () => {
       onClick={handleMenuResponsive}
     >
       <Link href="/">
-        <a id="link">Inicio</a>
+        <a id="link">
+          <House size={20} color="#fafafa" weight="bold" />
+          Inicio
+        </a>
       </Link>
       <Link href="/sobre">
-        <a id="link">Sobre</a>
+        <a id="link">
+          <User size={20} color="#fafafa" weight="bold" />
+          Sobre
+        </a>
       </Link>
       <Link href="/projetos">
-        <a id="link">Projetos</a>
+        <a id="link">
+          <Gear size={20} color="#fafafa" weight="bold" />
+          Projetos
+        </a>
       </Link>
       <Link href="/habilidades">
-        <a id="link">Habilidades</a>
+        <a id="link">
+          <Palette size={20} color="#fafafa" weight="bold" />
+          Habilidades
+        </a>
       </Link>
     </Menu>
   );

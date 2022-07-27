@@ -10,14 +10,22 @@ import NodeImage from "../../assets/NodeImage";
 import styled from "styled-components";
 
 const Main = styled.main`
-  height: calc(70vh - 2rem);
-  width: calc(100% - 2rem);
+  height: 76vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: auto;
   padding: 1rem;
   grid-gap: 1.5rem;
+`;
+
+const WrapCard = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  grid-gap: 1rem;
+  flex-direction: column;
+  align-items: center;
 
   @media only screen and (min-width: 768px) {
     justify-content: center;
@@ -32,7 +40,7 @@ const Main = styled.main`
 `;
 
 const Title = styled.h1`
-  font-size: 8vh;
+  font-size: 2.5rem;
   padding: 1rem 0 0 0;
   text-align: center;
   color: #9b90fe;
@@ -57,7 +65,7 @@ const Card = styled.div`
     grid-gap: 10px;
     padding: 15px;
     border-radius: 10px;
-    background: #252525;
+    background: #292929;
     color: #ffffff;
     border: 1px solid transparent;
 
@@ -70,59 +78,61 @@ const Card = styled.div`
 const Habilidades = () => {
   return (
     <>
-      <Title> HABILIDADES</Title>
       <Main>
-        <Card>
-          <a href="https://www.w3.org/html/" target="_blank">
-            <HTMLImage />
-            HTML
-          </a>
-        </Card>
-        <Card>
-          <a
-            href="https://www.w3.org/Style/CSS/Overview.en.html"
-            target="_blank"
-          >
-            <CSSImage />
-            CSS
-          </a>
-        </Card>
-        <Card>
-          <a href="https://www.javascript.com/" target="_blank">
-            <JSImage />
-            JavaScript
-          </a>
-        </Card>
-        <Card>
-          <a href="https://www.typescriptlang.org/" target="_blank">
-            <TSImage />
-            TypeScript
-          </a>
-        </Card>
-        <Card>
-          <a href="https://pt-br.reactjs.org/" target="_blank">
-            <ReactImage />
-            React
-          </a>
-        </Card>
-        <Card>
-          <a href="https://nodejs.org/en/" target="_blank">
-            <NodeImage />
-            Node.js
-          </a>
-        </Card>
-        <Card>
-          <a href="https://git-scm.com/" target="_blank">
-            <GitImage />
-            Git
-          </a>
-        </Card>
-        <Card>
-          <a href="https://github.com/" target="_blank">
-            <GithubImage />
-            Github
-          </a>
-        </Card>
+        <Title>HABILIDADES</Title>
+        <WrapCard>
+          <Card>
+            <a href="https://www.w3.org/html/" target="_blank">
+              <HTMLImage />
+              HTML
+            </a>
+          </Card>
+          <Card>
+            <a
+              href="https://www.w3.org/Style/CSS/Overview.en.html"
+              target="_blank"
+            >
+              <CSSImage />
+              CSS
+            </a>
+          </Card>
+          <Card>
+            <a href="https://www.javascript.com/" target="_blank">
+              <JSImage />
+              JavaScript
+            </a>
+          </Card>
+          <Card>
+            <a href="https://www.typescriptlang.org/" target="_blank">
+              <TSImage />
+              TypeScript
+            </a>
+          </Card>
+          <Card>
+            <a href="https://pt-br.reactjs.org/" target="_blank">
+              <ReactImage />
+              React
+            </a>
+          </Card>
+          <Card>
+            <a href="https://nodejs.org/en/" target="_blank">
+              <NodeImage />
+              Node.js
+            </a>
+          </Card>
+          <Card>
+            <a href="https://git-scm.com/" target="_blank">
+              <GitImage />
+              Git
+            </a>
+          </Card>
+          <Card>
+            <a href="https://github.com/" target="_blank">
+              <GithubImage />
+              Github
+            </a>
+          </Card>
+        </WrapCard>
       </Main>
     </>
   );
