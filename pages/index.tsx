@@ -90,7 +90,7 @@ const Home = () => {
           <WrapCard>
             <Card>
               <a
-                href={"https://www.Cardedin.com/in/rodrigohmoreira/"}
+                href={"https://www.linkedin.com/in/rodrigohmoreira/"}
                 target="_blank"
               >
                 <LinkedinImage />

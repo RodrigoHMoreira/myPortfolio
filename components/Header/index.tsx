@@ -61,29 +61,31 @@ const Header = () => {
           onClick={handleMenuResponsive}
         />
       </MenuResponsive>
-      <LogolabelImage />
+      <a href="https://www.rodrigomoreira.dev/" target="_blank">
+        <LogolabelImage />
+      </a>
       <Menu>
         <Link href="/">
           <a id="link">
-            <House size={20} color="#fafafa" weight="bold" />
+            <House size={20} weight="bold" />
             Inicio
           </a>
         </Link>
         <Link href="/sobre">
           <a id="link">
-            <User size={20} color="#fafafa" weight="bold" />
+            <User size={20} weight="bold" />
             Sobre
           </a>
         </Link>
         <Link href="/projetos">
           <a id="link">
-            <Gear size={20} color="#fafafa" weight="bold" />
+            <Gear size={20} weight="bold" />
             Projetos
           </a>
         </Link>
         <Link href="/habilidades">
           <a id="link">
-            <Palette size={20} color="#fafafa" weight="bold" />
+            <Palette size={20} weight="bold" />
             Habilidades
           </a>
         </Link>
