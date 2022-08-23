@@ -9,7 +9,7 @@ type HeaderProps = {
 
 const Wrap = styled.header`
   background: var(--header-footer);
-  margin-bottm: 2rem;
+  margin-bottom: 2rem;
   height: 12vh;
   display: flex;
   justify-content: center;
