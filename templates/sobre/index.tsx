@@ -9,6 +9,7 @@ const Wrap = styled.div`
   padding: 1rem;
 
   main {
+    margin-top: 2rem;
     max-width: 1120px;
     width: 100%;
     display: flex;
@@ -17,7 +18,7 @@ const Wrap = styled.div`
     justify-content: center;
 
     h1 {
-      margin-bottom: 2.5vh;
+      margin-bottom: 1rem;
       font-size: 2.75rem;
       color: var(--border);
     }
@@ -40,8 +41,6 @@ const Wrap = styled.div`
     a {
         text-decoration: none;
       }
-  }
-  @media screen and (min-width: 768px) {
   }
 `;
 

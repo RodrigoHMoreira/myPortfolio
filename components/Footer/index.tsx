@@ -8,7 +8,8 @@ type FooterProps = {
 
 const Wrap = styled.footer<FooterProps>`
   background: var(--header-footer);
-  height: 75vh;
+  margin-top: 2rem;
+  height: 60vh;
   padding: 0.5rem;
   color: var(--color);
   display: flex;
@@ -79,13 +80,8 @@ const Wrap = styled.footer<FooterProps>`
       }
     }
   }
-
   @media screen and (min-width: 768px) {
-    margin-top: 2rem;
-  }
-
-  @media screen and (min-width: 768px) {
-    height: 40vh;
+    height: 30vh;
   }
 `;
 

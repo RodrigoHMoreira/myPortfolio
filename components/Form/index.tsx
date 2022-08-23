@@ -5,7 +5,6 @@ const Wrap = styled.form`
   background: var(--card);
   max-width: 300px;
   width: 100%;
-  height: 80vh;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;

@@ -16,6 +16,7 @@ const Wrap = styled.div`
   padding: 1rem;
 
   main {
+    margin-top: 2rem;
     max-width: 1120px;
     width: 100%;
     padding: 1rem;
@@ -28,7 +29,7 @@ const Wrap = styled.div`
       justify-content: center;
 
       h1 {
-        margin-bottom: 2.5vh;
+        margin-bottom: 2rem;
         font-size: 2.75rem;
         color: var(--border);
       }
@@ -43,7 +44,6 @@ const Wrap = styled.div`
 
         li {
           background: var(--card);
-          height: 30vh;
           width: 230px;
           padding: 1rem;
           border-radius: 20px;
@@ -76,13 +76,9 @@ const Wrap = styled.div`
 
         @media screen and (min-width: 768px) {
           grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows: 45vh 25vh;
         }
       }
     }
-  }
-  @media screen and (min-width: 768px) {
-    height: 100vh;
   }
 `;
 

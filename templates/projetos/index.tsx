@@ -9,6 +9,7 @@ const Wrap = styled.div`
   padding: 1rem;
 
   main {
+    margin-top: 2rem;
     max-width: 1120px;
     width: 100%;
     padding: 1rem;
@@ -20,15 +21,11 @@ const Wrap = styled.div`
       align-items: center;
 
       h1 {
-        margin-bottom: 2.5vh;
+        margin-bottom: 2rem;
         font-size: 2.75rem;
         color: var(--border);
       }
     }
-  }
-
-  @media screen and (min-width: 768px) {
-    height: 100vh;
   }
 `;
 
