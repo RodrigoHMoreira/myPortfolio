@@ -1,121 +1,101 @@
-import React from "react";
+import { ArrowUp, CaretUp } from "phosphor-react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import AvatarImage from "../assets/AvatarImage";
-import FacebookImage from "../assets/FacebookImage";
-import InstagramImage from "../assets/InstagramImage";
-import LinkedinImage from "../assets/LinkedinImage";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import MenuMobile from "../components/MenuMobile";
+import Contato from "../templates/contato";
+import Habilidades from "../templates/habilidades";
+import Inicio from "../templates/inicio";
+import Projetos from "../templates/projetos";
+import Sobre from "../templates/sobre";
 
-const Main = styled.main`
-  height: 76vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: auto;
-  padding: 1rem;
-  grid-gap: 1.5rem;
+type HomeProps = {
+  isScroll: boolean;
+};
 
-  @media only screen and (min-width: 768px) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+const Wrap = styled.div<HomeProps>`
+  #btn-up {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    z-index: 999;
 
-  #image {
-    border: 5px solid #9b90fe;
-    border-radius: 50%;
-    padding: 0.5rem;
-  }
-
-  #main {
-    text-align: center;
-  }
-`;
-
-const WrapCard = styled.div`
-  padding: 50px;
-
-  @media only screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    grid-gap: 50px;
-  }
-`;
-
-const Title = styled.h1`
-  font-size: 3rem;
-  color: rgba(255, 255, 255, 1);
-
-  @media only screen and (min-width: 768px) {
-    margin-top: 5vh;
-  }
-`;
-
-const SubTitle = styled.h3`
-  font-size: 2rem;
-  color: #9b90fe;
-`;
-
-const Card = styled.div`
-  display: flex;
-  justify-content: center;
-
-  a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1);
-    border-radius: 50%;
-    width: 50px;
-    height: 80px;
-    grid-gap: 10px;
-
-    &:hover {
-      color: #9b90fe;
+    a {
+      display: ${({ isScroll }) => (isScroll ? "flex" : "none")};
+      background: var(--button);
+      color: var(--color);
+      text-decoration: none;
+      padding: 0.5rem;
+      border-radius: 50%;
     }
   }
 `;
 
 const Home = () => {
+  const [isScroll, setIsScroll] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleIsScroll = () => {
+    const scrolled = document.documentElement.scrollTop;
+
+    if (scrolled > 300) {
+      setIsScroll(true);
+    } else if (scrolled <= 300) {
+      setIsScroll(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleIsScroll);
+  }, []);
+
   return (
-    <>
-      <Main>
-        <div id="image">
-          <AvatarImage />
+    <Wrap isScroll={isScroll}>
+      {isOpen && (
+        <div onClick={handleOpen}>
+          <MenuMobile isOpen={isOpen} />
         </div>
-        <div id="main">
-          <Title>Rodrigo Moreira</Title>
-          <SubTitle>DESENVOLVEDOR FRONT-END</SubTitle>
-          <WrapCard>
-            <Card>
-              <a
-                href={"https://www.linkedin.com/in/rodrigohmoreira/"}
-                target="_blank"
-              >
-                <LinkedinImage />
-                Linkedin
-              </a>
-            </Card>
-            <Card>
-              <a
-                href={"https://www.facebook.com/rodrigo.henrique.37604/"}
-                target="_blank"
-              >
-                <FacebookImage />
-                Facebook
-              </a>
-            </Card>
-            <Card>
-              <a href={"https://www.instagram.com/drigohenri/"} target="_blank">
-                <InstagramImage />
-                Instagram
-              </a>
-            </Card>
-          </WrapCard>
-        </div>
-      </Main>
-    </>
+      )}
+      <div id="btn-up">
+        <a href="#inicio">
+          <CaretUp size={20} weight="bold" onClick={scrollToTop} />
+        </a>
+      </div>
+      <div id="inicio">
+        <Header handleOpen={handleOpen} />
+      </div>
+      <div>
+        <Inicio />
+      </div>
+      <div id="sobre">
+        <Sobre />
+      </div>
+      <div id="habilidades">
+        <Habilidades />
+      </div>
+      <div id="projetos">
+        <Projetos />
+      </div>
+      <div id="contato">
+        <Contato />
+      </div>
+      <div>
+        <Footer />
+      </div>
+    </Wrap>
   );
 };
 

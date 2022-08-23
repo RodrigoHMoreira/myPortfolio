@@ -1,95 +1,91 @@
-import Link from "next/link";
-import { Gear, House, List, Palette, User } from "phosphor-react";
-import { useContext } from "react";
+import { List } from "phosphor-react";
+import { useState } from "react";
 import styled from "styled-components";
 import LogolabelImage from "../../assets/LogolabelImage";
-import { MenuResponsiveContext } from "../../context/MenuResponsiveContext";
 
-const Wrap = styled.div`
-  background: #161616;
-  height: 15vh;
-  width: calc(100% - 2rem);
-  padding: 0 1rem;
+type HeaderProps = {
+  handleOpen: () => void;
+};
+
+const Wrap = styled.header`
+  background: var(--header-footer);
+  height: 12vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-const Menu = styled.div`
-  display: none;
-  align-items: center;
   justify-content: center;
-  grid-gap: 2rem;
-  font-weight: 700;
+  align-items: center;
+  padding: 0.5rem;
 
-  @media only screen and (min-width: 768px) {
+  section {
+    max-width: 1120px;
+    width: 100%;
     display: flex;
-  }
-
-  #link {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 3vh;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    grid-gap: 5px;
 
-    &:hover {
-      color: #9b90fe;
+    nav {
+      height: 5rem;
+      display: none;
+      grid-gap: 0.5rem;
+      align-items: center;
+      font-weight: 300;
+      font-size: 1rem;
+
+      a {
+        height: 5rem;
+        width: 25%;
+        text-decoration: none;
+        color: var(--color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 0.25rem;
+        padding: 0 0.75rem;
+        transition: 0.2s;
+        border-bottom: 0.25rem solid transparent;
+
+        &:hover {
+          border-bottom: 0.25rem solid var(--hover);
+          cursor: pointer;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
+    }
+
+    button {
+      border: none;
+      background: transparent;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
     }
   }
 `;
 
-const MenuResponsive = styled.div`
-  display: flex;
-
-  @media only screen and (min-width: 768px) {
-    display: none;
-  }
-`;
-
-const Header = () => {
-  const { handleMenuResponsive } = useContext(MenuResponsiveContext);
-
+const Header = ({handleOpen }: HeaderProps) => {
   return (
     <Wrap>
-      <MenuResponsive>
-        <List
-          size={30}
-          color="#fafafa"
-          weight="bold"
-          onClick={handleMenuResponsive}
-        />
-      </MenuResponsive>
-      <a href="https://www.rodrigomoreira.dev/" target="_blank">
-        <LogolabelImage />
-      </a>
-      <Menu>
-        <Link href="/">
-          <a id="link">
-            <House size={20} weight="bold" />
-            Inicio
-          </a>
-        </Link>
-        <Link href="/sobre">
-          <a id="link">
-            <User size={20} weight="bold" />
-            Sobre
-          </a>
-        </Link>
-        <Link href="/projetos">
-          <a id="link">
-            <Gear size={20} weight="bold" />
-            Projetos
-          </a>
-        </Link>
-        <Link href="/habilidades">
-          <a id="link">
-            <Palette size={20} weight="bold" />
-            Habilidades
-          </a>
-        </Link>
-      </Menu>
+      <section>
+        <a href="#inicio">
+          <LogolabelImage />
+        </a>
+        <nav>
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <button onClick={handleOpen}>
+          <List size={24} color="#ffffff" />
+        </button>
+      </section>
     </Wrap>
   );
 };

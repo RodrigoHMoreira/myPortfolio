@@ -4,7 +4,13 @@ import reactImage from "../ReactImage/react-js.png";
 
 const ReactImage = (props) => {
   return (
-    <Image src={reactImage} alt="React" width={"115px"} height={"115px"} style={{borderRadius: '50%'}}/>
+      <Image
+        src={reactImage}
+        alt="React"
+        width={"90%"}
+        height={"90%"}
+        style={{ borderRadius: "50%" }}
+      />
   );
 };
 
