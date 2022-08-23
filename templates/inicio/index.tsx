@@ -96,10 +96,10 @@ const Inicio = () => {
         <section>
           <AvatarImage />
           <article>
-            <a href="" target="_blank">
+            <a href="https://www.linkedin.com/in/rodrigohmoreira/" target="_blank">
               <LinkedinLogo size={44} />
             </a>
-            <a href="" target="_blank">
+            <a href="https://github.com/RodrigoHMoreira" target="_blank">
               <GithubLogo size={44} />
             </a>
           </article>
