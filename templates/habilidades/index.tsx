@@ -51,7 +51,7 @@ const Wrap = styled.div`
           transition: 0.2s;
 
           @media screen and (min-width: 1024px) {
-            width: 200px;
+            width: 230px;
             height: 200px;
           }
 
