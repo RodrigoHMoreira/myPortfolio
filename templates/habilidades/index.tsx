@@ -55,7 +55,6 @@ const Wrap = styled.div`
             height: 200px;
           }
 
-
           &:hover {
             border: 1px solid var(--border);
           }
@@ -183,7 +182,7 @@ const Habilidades = () => {
                 </div>
                 <span>
                   Git é um sistema de controle de versões distribuído, usado
-                  para desenvolvimento de software.
+                  para desenvolver software.
                 </span>
               </a>
             </li>

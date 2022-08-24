@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import styled from "styled-components";
 
 const Wrap = styled.div`
-  max-width: 500px;
+  max-width: 475px;
   width: 100%;
   width: 100%;
   padding: 1rem;
