@@ -44,14 +44,15 @@ const Wrap = styled.div`
 
         li {
           background: var(--card);
-          width: 230px;
+          width: 120px;
           padding: 1rem;
           border-radius: 20px;
           border: 1px solid transparent;
           transition: 0.2s;
 
-          @media screen and (max-width: 1024px) {
-            width: 120px;
+          @media screen and (min-width: 1024px) {
+            width: 230px;
+            height: 230px;
           }
 
 
@@ -64,8 +65,11 @@ const Wrap = styled.div`
             text-decoration: none;
             color: var(--color);
             font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 768px) {
               display: block;
               white-space: nowrap;
               overflow: hidden;

@@ -4,12 +4,13 @@ const GlobalStyled = createGlobalStyle`
     :root{
         --background: linear-gradient(to left top, #000000, #030303, #060606, #080808, #0b0b0b);
         --background-menu:#;
-        --color: #ffffff;
+        --color: #FFFFFF;
         --border: #9C90EA;
         --header-footer:#121212;
         --card: #1D1D1D;
         --button: #7f6eed;
-        --hover: #564b99;
+        --hover: #9797A8;
+        --hover-button: #564b99;
     }
 
     * {

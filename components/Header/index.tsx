@@ -28,27 +28,27 @@ const Wrap = styled.header`
       display: none;
       grid-gap: 0.5rem;
       align-items: center;
-      font-weight: 300;
       font-size: 1rem;
 
       a {
+        display: inline-block;
+        position: relative;
         height: 5rem;
-        width: 25%;
+        width: 100%;
+        line-height: 5rem;
         text-decoration: none;
         color: var(--color);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-gap: 0.25rem;
         padding: 0 0.75rem;
+        border-bottom: 1px solid transparent;
+
         transition: 0.2s;
-        border-bottom: 0.25rem solid transparent;
 
         &:hover {
-          border-bottom: 0.25rem solid var(--hover);
-          cursor: pointer;
+          border-bottom: 1px solid var(--border);
+          color: var(--hover);
         }
       }
+
       @media screen and (min-width: 768px) {
         display: flex;
       }
@@ -69,11 +69,11 @@ const Wrap = styled.header`
   }
 `;
 
-const Header = ({handleOpen }: HeaderProps) => {
+const Header = ({ handleOpen }: HeaderProps) => {
   return (
     <Wrap>
       <section>
-        <a href="#inicio">
+        <a href="https://www.rodrigomoreira.dev/">
           <LogolabelImage />
         </a>
         <nav>

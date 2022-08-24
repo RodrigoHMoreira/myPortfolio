@@ -21,7 +21,7 @@ const Wrap = styled.div`
     font-weight: 300;
 
     &:hover {
-      background: var(--hover);
+      background: var(--hover-button);
       cursor: pointer;
     }
   }

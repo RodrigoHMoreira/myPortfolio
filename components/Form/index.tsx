@@ -11,6 +11,10 @@ const Wrap = styled.form`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid var(--border);  }
 
   label {
     width: 100%;
@@ -26,10 +30,6 @@ const Wrap = styled.form`
     padding: 0.75rem;
     border: 1px solid transparent;
     border-radius: 5px;
-
-    &:hover {
-      border: 1px solid var(--border);
-    }
   }
 
   div {
@@ -50,7 +50,7 @@ const Wrap = styled.form`
     font-weight: 300;
 
     &:hover {
-      background: var(--hover);
+      background: var(--hover-button);
       cursor: pointer;
     }
   }
