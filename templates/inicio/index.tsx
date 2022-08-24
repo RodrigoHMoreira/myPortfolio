@@ -10,7 +10,6 @@ const Wrap = styled.div`
   padding: 1rem;
 
   main {
-    margin-top: 5rem;
     max-width: 1120px;
     width: 100%;
     display: flex;
@@ -75,6 +74,7 @@ const Wrap = styled.div`
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
+      margin: 5rem 0;
     }
 
   }

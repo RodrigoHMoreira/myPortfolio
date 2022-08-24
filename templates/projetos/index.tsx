@@ -9,7 +9,7 @@ const Wrap = styled.div`
   padding: 1rem;
 
   main {
-    margin-top: 2rem;
+    margin-top: 1rem;
     max-width: 1120px;
     width: 100%;
     padding: 1rem;
@@ -26,6 +26,11 @@ const Wrap = styled.div`
         color: var(--border);
       }
     }
+
+    @media screen and (min-width: 768px) {
+      margin: 2.5rem 0;
+    }
+
   }
 `;
 

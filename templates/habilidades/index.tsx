@@ -16,7 +16,7 @@ const Wrap = styled.div`
   padding: 1rem;
 
   main {
-    margin-top: 2rem;
+    margin-top: 1rem;
     max-width: 1120px;
     width: 100%;
     padding: 1rem;
@@ -69,7 +69,7 @@ const Wrap = styled.div`
             flex-direction: column;
             align-items: center;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 912px) {
               display: block;
               white-space: nowrap;
               overflow: hidden;
@@ -82,6 +82,10 @@ const Wrap = styled.div`
           grid-template-columns: 1fr 1fr 1fr 1fr;
         }
       }
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin: 2.5rem 0;
     }
   }
 `;

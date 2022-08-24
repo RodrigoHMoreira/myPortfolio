@@ -10,7 +10,7 @@ const Wrap = styled.div`
   padding: 1rem;
 
   main {
-    margin-top: 2rem;
+    margin-top: 1rem;
     max-width: 1120px;
     width: 100%;
     display: flex;
@@ -65,6 +65,11 @@ const Wrap = styled.div`
         }
       }
     }
+
+    @media screen and (min-width: 768px) {
+      margin: 2.5rem 0;
+    }
+
   }
 `;
 
@@ -72,7 +77,7 @@ const Contato = () => {
   return (
     <Wrap>
       <main>
-        <h1>Contate-me</h1>
+        <h1>CONTATO</h1>
         <section>
           <Form />
           <article>

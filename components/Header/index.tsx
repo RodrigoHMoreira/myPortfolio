@@ -44,7 +44,6 @@ const Wrap = styled.header`
         transition: 0.2s;
 
         &:hover {
-          border-bottom: 1px solid var(--border);
           color: var(--hover);
         }
       }
