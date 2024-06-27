@@ -14,7 +14,8 @@ const Wrap = styled.form`
   border: 1px solid transparent;
 
   &:hover {
-    border: 1px solid var(--border);  }
+    border: 1px solid var(--border);
+  }
 
   label {
     width: 100%;
@@ -34,23 +35,22 @@ const Wrap = styled.form`
 
   textarea {
     background: var(--color);
-   width: 100%;
-   maxwidth: 100%;
+    width: 100%;
+    maxwidth: 100%;
     padding: 0.5rem;
     border: 1px solid transparent;
     border-radius: 5px;
     height: 75px;
-     box-sizing: border-box; 
-            resize: vertical; }
-   
-    
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
   div {
     margin-top: 0.1rem;
   }
 
   #submit {
     margin-top: 1rem;
-    width: 200px;
     height: 2.5rem;
     background: var(--button);
     color: var(--color);
@@ -104,7 +104,7 @@ const Form = () => {
       <input type="text" name="title" />
       <label>Descrição:</label>
       <textarea name="descrition" />
-      <div>
+      <div style={{ width: "100%" }}>
         <input id="submit" type="submit" value="Enviar" />
       </div>
     </Wrap>
