@@ -28,20 +28,11 @@ const Wrap = styled.div`
       align-items: center;
       justify-content: center;
 
-      h1 {
+      h1, h2 {
         margin-bottom: 2rem;
         font-size: 2.75rem;
         color: var(--border);
       }
-
-      h2 {
-          margin-bottom: 2rem;
-          transition: 0.2s;
-          
-            &:hover {
-            color: var(--border);
-          }
-        }
 
       ul {
         list-style-type: none;
