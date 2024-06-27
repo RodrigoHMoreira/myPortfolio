@@ -91,7 +91,7 @@ const Form = () => {
       <label>Título do projeto:</label>
       <input type="text" name="title" />
       <label>Descrição:</label>
-      <textarea style={{ height: "75px" }} name="descrition" />
+      <textarea style={{ height: "75px", maxwidth: "300px", width:"100%" }} name="descrition" />
       <div>
         <input id="submit" type="submit" value="Enviar" />
       </div>
