@@ -32,6 +32,18 @@ const Wrap = styled.form`
     border-radius: 5px;
   }
 
+  textarea {
+    background: var(--color);
+   width: 100%;
+   maxwidth: 100%;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 75px;
+     box-sizing: border-box; 
+            resize: vertical; }
+   
+    
   div {
     margin-top: 0.1rem;
   }
@@ -91,7 +103,7 @@ const Form = () => {
       <label>Título do projeto:</label>
       <input type="text" name="title" />
       <label>Descrição:</label>
-      <textarea style={{ height: "75px", maxwidth: "300px", width:"100%" }} name="descrition" />
+      <textarea name="descrition" />
       <div>
         <input id="submit" type="submit" value="Enviar" />
       </div>
