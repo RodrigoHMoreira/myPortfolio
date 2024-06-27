@@ -1,12 +1,4 @@
 import React from "react";
-import ReactImage from "../../assets/ReactImage";
-import CSSImage from "../../assets/CSSImage";
-import GitImage from "../../assets/GitImage";
-import HTMLImage from "../../assets/HTMLImage";
-import JSImage from "../../assets/JSImage";
-import TSImage from "../../assets/TSImage";
-import NodeImage from "../../assets/NodeImage";
-import NextImage from "../../assets/NextImage";
 import styled from "styled-components";
 
 const Wrap = styled.div`
