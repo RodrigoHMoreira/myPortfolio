@@ -29,6 +29,7 @@ const Wrap = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: justify;
 
       p {
         font-size: 1.5rem;
