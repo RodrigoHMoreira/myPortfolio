@@ -53,25 +53,20 @@ const Sobre = () => {
     <Wrap>
       <main>
         <h1>SOBRE MIM</h1>
-        <section>
-          <p>
-            Me chamo Rodrigo, tenho mais de 1 ano de experiência em programação
-            web e minha especialidade é orientada para o Desenvolvimento
-            FRONT-END.
-          </p>
-          <p>
-            Formado em Gestão Empresarial, migrei minha carreira profissional
-            para Tecnologia da Informação, por me identificar bastante com a
-            área. Futuramente tenho planos de me graduar também Análise e
-            Desenvolvimento de Sistemas, afim de aprimorar ainda mais meus
-            conhecimentos como programador.
-          </p>
-          <p>
-            Meu objetivo é continuar me dedicando ao setor tecnológico, atuar
-            com as principais tecnologias do mercado e entregar um resultado de
-            qualidade, a todos que confiarem no meu trabalho.
-          </p>
-        </section>
+       <section>
+  <p>
+    Me chamo Rodrigo e tenho mais de um ano de experiência em programação web. Inicialmente especializado em desenvolvimento front-end, evoluí para um desenvolvedor de software completo, atuando tanto no front-end quanto no back-end e na gestão de bancos de dados.
+  </p>
+  <p>
+    Sou formado em Gestão Empresarial e migrei minha carreira para a área de Tecnologia da Informação, onde encontrei minha verdadeira paixão. Estou constantemente me atualizando e aprimorando minhas habilidades através de cursos e projetos práticos. Tenho planos futuros de me graduar também em Análise e Desenvolvimento de Sistemas para aprofundar ainda mais meus conhecimentos e habilidades como programador.
+  </p>
+  <p>
+    No meu trabalho, valorizo a qualidade do código, a eficiência dos sistemas e a usabilidade das interfaces. Adoto metodologias ágeis para garantir entregas rápidas e iterativas, sempre focado em atender às necessidades dos usuários e clientes.
+  </p>
+  <p>
+    Meu objetivo é continuar me dedicando ao setor tecnológico, utilizando as principais tecnologias do mercado e entregando resultados de alta qualidade. Estou sempre em busca de novos desafios que me permitam crescer profissionalmente e contribuir de maneira significativa para os projetos em que estou envolvido.
+  </p>
+</section>
         <a download href="../curriculo.pdf">
           <Button onClick={() => {}} label="Download CV" />
         </a>
