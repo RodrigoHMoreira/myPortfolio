@@ -36,6 +36,11 @@ const Wrap = styled.div`
 
       h2 {
           margin-bottom: 2rem;
+          transition: 0.2s;
+          
+            &:hover {
+            color: var(--border);
+          }
         }
 
       ul {
