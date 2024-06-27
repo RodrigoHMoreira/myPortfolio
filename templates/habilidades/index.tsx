@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { habilities } from "../../data/habilities";
+import Image from "next/image";
 
 const Wrap = styled.div`
   display: flex;
@@ -47,6 +49,7 @@ const Wrap = styled.div`
           border-radius: 20px;
           border: 1px solid transparent;
           transition: 0.2s;
+          
 
           @media screen and (min-width: 1024px) {
             width: 230px;
@@ -94,116 +97,17 @@ const Habilidades = () => {
         <section>
           <h1>HABILIDADES</h1>
           <ul>
-            <li>
-              <a href="https://www.w3.org/html/" target="_blank">
-                <h2>HTML</h2>
-                <span>
-                  HTMLé uma linguagem de marcação utilizada na construção de
-                  páginas na Web.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.w3.org/Style/CSS/Overview.en.html"
-                target="_blank"
-              >
-                <h2>CSS</h2>
-                <span>
-                  CSS é um mecanismo para adicionar estilo a um documento Web.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.javascript.com/" target="_blank">
-                <h2>JAVASCRIPT</h2>
-                <span>
-                  JavaScript é uma linguagem de programação para itens complexos
-                  em páginas Web
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.typescriptlang.org/" target="_blank">
-                <h2>TYPECRIPT</h2>
-                <span>
-                  TypeScript é um superconjunto JavaScript que adicona tipagem
-                  na linguagem.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://pt-br.reactjs.org/" target="_blank">
-                <h2>REACT</h2>
-                <span>
-                  React é uma biblioteca JavaScript que cria interfaces de
-                  usuário em páginas Web.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://nextjs.org/" target="_blank">
-                <h2>NEXT.JS</h2>
-                <span>
-                  Next.js é um framework de para a criação aplicações front-end
-                  e back-end.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://nodejs.org/en/" target="_blank">
-                <h2>NODE.JS</h2>
-                <span>
-                  Node.js é um ambiente de execução que permite executar
-                  aplicações sem um navegador.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://git-scm.com/" target="_blank">
-                <h2>GIT</h2>
-                <span>
-                  Git é um sistema de controle de versões distribuído, usado
-                  para desenvolver software.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mongodb.com/" target="_blank">
-                <h2>MONGO DB</h2>
-                <span>
-                  MongoDB é um banco de dados NoSQL que armazena dados em
-                  documentos JSON.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mysql.com/" target="_blank">
-                <h2>MYSQL</h2>
-                <span>
-                  MySQL é um banco de dados relacional popular que utiliza SQL
-                  para gerenciar dados.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.prisma.io/" target="_blank">
-                <h2>PRISMA</h2>
-                <span>
-                  Prisma é um ORM que simplifica a interação com bancos de dados
-                  SQL e NoSQL.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://jestjs.io/" target="_blank">
-                <h2>JEST</h2>
-                <span>
-                  Jest é um framework de teste em JavaScript, usado para testar
-                  aplicações front-end e back-end.
-                </span>
-              </a>
-            </li>
+            {habilities.map((item, index)=>{
+              return (
+              <li key={index} style={{height: '250px'}}>
+                <a href={item.link} target="_blank">
+                  <Image src={item.image} alt="logolabel"  width={'100px'} height={'100px'}/>
+                    <span style={{marginTop:"25px"}}>
+                      {item.description}
+                    </span>
+                </a>
+              </li>)
+            })}
           </ul>
         </section>
       </main>
