@@ -186,6 +186,43 @@ const Habilidades = () => {
                 </span>
               </a>
             </li>
+              <li>
+              <a href="https://www.mongodb.com/" target="_blank">
+                <div>
+                  <GitImage />
+                </div>
+                <span>
+                MongoDB é um banco de dados NoSQL que armazena dados em documentos JSON, ideal para aplicações que precisam de flexibilidade e escalabilidade.
+                </span>
+              </a>
+            </li>  <li>
+              <a href="https://www.mysql.com/" target="_blank">
+                <div>
+                  <GitImage />
+                </div>
+                <span>
+                 MySQL é um banco de dados relacional popular, conhecido por sua eficiência e facilidade de uso, que utiliza SQL para gerenciar dados.
+                </span>
+              </a>
+            </li>  <li>
+              <a href="https://www.prisma.io/" target="_blank">
+                <div>
+                  <GitImage />
+                </div>
+                <span>
+                 Prisma é um ORM moderno que simplifica a interação com bancos de dados SQL e NoSQL, permitindo consultas seguras e eficientes em JavaScript/TypeScript.
+                </span>
+              </a>
+            </li>  <li>
+              <a href="https://jestjs.io/" target="_blank">
+                <div>
+                  <GitImage />
+                </div>
+                <span>
+                  Jest é um framework de teste em JavaScript, usado para testar aplicações front-end e back-end, com suporte a mocks, testes assíncronos e snapshots.
+                </span>
+              </a>
+            </li>
           </ul>
         </section>
       </main>
