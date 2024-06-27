@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Wrap = styled.div`
   max-width: 475px;
   width: 100%;
-  width: 100%;
+  height: "100%";
   padding: 1rem;
 `;
 
@@ -19,9 +19,17 @@ const Carousell = () => {
         showStatus={false}
         showThumbs={false}
       >
-        <div>
-          <img src="../project1.png" />
-        </div>
+        <a
+          href="https://project-verena-weikert-web.vercel.app/"
+          target="_blank"
+        >
+          <div>
+            <img
+              src="../project-1.png"
+              style={{ width: "100%", height: "375px" }}
+            />
+          </div>
+        </a>
         <div>
           <img src="../project2.png" />
         </div>
