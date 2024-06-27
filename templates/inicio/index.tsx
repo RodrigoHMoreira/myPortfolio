@@ -87,7 +87,7 @@ const Inicio = () => {
         <section>
           <div>
             <h1>Rodrigo Moreira</h1>
-            <h2>DESENVOLVEDOR FRONT-END</h2>
+            <h2>DESENVOLVEDOR DE SOFTWARE</h2>
           </div>
           <a href="#contato">
             <Button onClick={() => {}} label="Contate-me" />
