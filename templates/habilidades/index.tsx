@@ -34,6 +34,10 @@ const Wrap = styled.div`
         color: var(--border);
       }
 
+      h2 {
+          margin-bottom: 2rem;
+        }
+
       ul {
         list-style-type: none;
         display: grid;
