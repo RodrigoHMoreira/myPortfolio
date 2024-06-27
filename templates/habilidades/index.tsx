@@ -99,7 +99,6 @@ const Habilidades = () => {
             <li>
               <a href="https://www.w3.org/html/" target="_blank">
                 <div>
-                  <HTMLImage />
                 </div>
                 <span>
                   HTMLé uma linguagem de marcação utilizada na construção de
@@ -112,9 +111,6 @@ const Habilidades = () => {
                 href="https://www.w3.org/Style/CSS/Overview.en.html"
                 target="_blank"
               >
-                <div>
-                  <CSSImage />
-                </div>
                 <span>
                   CSS é um mecanismo para adicionar estilo a um documento Web.
                 </span>
@@ -133,9 +129,6 @@ const Habilidades = () => {
             </li>
             <li>
               <a href="https://www.typescriptlang.org/" target="_blank">
-                <div>
-                  <TSImage />
-                </div>
                 <span>
                   TypeScript é um superconjunto JavaScript que adicona tipagem
                   na linguagem.
@@ -144,9 +137,6 @@ const Habilidades = () => {
             </li>
             <li>
               <a href="https://pt-br.reactjs.org/" target="_blank">
-                <div>
-                  <ReactImage />
-                </div>
                 <span>
                   React é uma biblioteca JavaScript que cria interfaces de
                   usuário em páginas Web.
@@ -155,9 +145,6 @@ const Habilidades = () => {
             </li>
             <li>
               <a href="https://nextjs.org/" target="_blank">
-                <div>
-                  <NextImage />
-                </div>
                 <span>
                   Next.js é um framework de para a criação aplicações front-end
                   e back-end.
@@ -166,9 +153,6 @@ const Habilidades = () => {
             </li>
             <li>
               <a href="https://nodejs.org/en/" target="_blank">
-                <div>
-                  <NodeImage />
-                </div>
                 <span>
                   Node.js é um ambiente de execução que permite executar
                   aplicações sem um navegador.
@@ -177,9 +161,6 @@ const Habilidades = () => {
             </li>
             <li>
               <a href="https://git-scm.com/" target="_blank">
-                <div>
-                  <GitImage />
-                </div>
                 <span>
                   Git é um sistema de controle de versões distribuído, usado
                   para desenvolver software.
@@ -188,36 +169,27 @@ const Habilidades = () => {
             </li>
               <li>
               <a href="https://www.mongodb.com/" target="_blank">
-                <div>
-                  <GitImage />
-                </div>
                 <span>
                 MongoDB é um banco de dados NoSQL que armazena dados em documentos JSON.
                 </span>
               </a>
-            </li>  <li>
+            </li>  
+            <li>
               <a href="https://www.mysql.com/" target="_blank">
-                <div>
-                  <GitImage />
-                </div>
                 <span>
                  MySQL é um banco de dados relacional popular que utiliza SQL para gerenciar dados.
                 </span>
               </a>
-            </li>  <li>
+            </li>  
+            <li>
               <a href="https://www.prisma.io/" target="_blank">
-                <div>
-                  <GitImage />
-                </div>
                 <span>
                  Prisma é um ORM que simplifica a interação com bancos de dados SQL e NoSQL.
                 </span>
               </a>
-            </li>  <li>
+            </li>  
+            <li>
               <a href="https://jestjs.io/" target="_blank">
-                <div>
-                  <GitImage />
-                </div>
                 <span>
                   Jest é um framework de teste em JavaScript, usado para testar aplicações front-end e back-end.
                 </span>
