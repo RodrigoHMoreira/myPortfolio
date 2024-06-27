@@ -192,7 +192,7 @@ const Habilidades = () => {
                   <GitImage />
                 </div>
                 <span>
-                MongoDB é um banco de dados NoSQL que armazena dados em documentos JSON, ideal para aplicações que precisam de flexibilidade e escalabilidade.
+                MongoDB é um banco de dados NoSQL que armazena dados em documentos JSON.
                 </span>
               </a>
             </li>  <li>
@@ -201,7 +201,7 @@ const Habilidades = () => {
                   <GitImage />
                 </div>
                 <span>
-                 MySQL é um banco de dados relacional popular, conhecido por sua eficiência e facilidade de uso, que utiliza SQL para gerenciar dados.
+                 MySQL é um banco de dados relacional popular que utiliza SQL para gerenciar dados.
                 </span>
               </a>
             </li>  <li>
@@ -210,7 +210,7 @@ const Habilidades = () => {
                   <GitImage />
                 </div>
                 <span>
-                 Prisma é um ORM moderno que simplifica a interação com bancos de dados SQL e NoSQL, permitindo consultas seguras e eficientes em JavaScript/TypeScript.
+                 Prisma é um ORM que simplifica a interação com bancos de dados SQL e NoSQL.
                 </span>
               </a>
             </li>  <li>
@@ -219,7 +219,7 @@ const Habilidades = () => {
                   <GitImage />
                 </div>
                 <span>
-                  Jest é um framework de teste em JavaScript, usado para testar aplicações front-end e back-end, com suporte a mocks, testes assíncronos e snapshots.
+                  Jest é um framework de teste em JavaScript, usado para testar aplicações front-end e back-end.
                 </span>
               </a>
             </li>
