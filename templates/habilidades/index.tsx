@@ -29,9 +29,13 @@ const Wrap = styled.div`
       }
 
       h2 {
-        margin-bottom: 2rem;
-        font-size: 1.75rem;
+        margin-top: 2rem;
+        font-size: 1.25rem;
         color: var(--color);
+
+          @media screen and (min-width: 1024px) {
+          display: none
+        }
       }
 
       ul {
@@ -44,7 +48,8 @@ const Wrap = styled.div`
 
         li {
           background: var(--card);
-          width: 120px;
+          width: 100%;
+          height: 250px;
           padding: 1rem;
           border-radius: 20px;
           border: 1px solid transparent;
@@ -52,8 +57,7 @@ const Wrap = styled.div`
           
 
           @media screen and (min-width: 1024px) {
-            width: 230px;
-            height: 200px;
+            max-width: 230px;
           }
 
           &:hover {
@@ -63,18 +67,20 @@ const Wrap = styled.div`
           a {
             margin-top: 0.5rem;
             text-decoration: none;
-            color: var(--color);
-            font-weight: 300;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+          
 
-            @media screen and (max-width: 912px) {
-              display: block;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
+              span {
+                color: var(--color);
+                font-weight: 300;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media screen and (max-width: 768px) {
+                display: none
+              }
             }
+          
           }
         }
 
@@ -99,12 +105,15 @@ const Habilidades = () => {
           <ul>
             {habilities.map((item, index)=>{
               return (
-              <li key={index} style={{height: '250px'}}>
+              <li key={index}>
                 <a href={item.link} target="_blank">
                   <Image src={item.image} alt="logolabel"  width={'100px'} height={'100px'}/>
                     <span style={{marginTop:"25px"}}>
                       {item.description}
                     </span>
+                    <h2>
+                      {item.name}
+                    </h2>
                 </a>
               </li>)
             })}

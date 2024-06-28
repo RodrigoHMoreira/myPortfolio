@@ -3,10 +3,15 @@ import { Carousel } from "react-responsive-carousel";
 import styled from "styled-components";
 
 const Wrap = styled.div`
-  max-width: 475px;
+  max-width: 600px;
   width: 100%;
-  height: "100%";
-  padding: 1rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: var(--card);
+
+    img {
+        border-radius: 20px;
+      }
 `;
 
 const Carousell = () => {
@@ -25,9 +30,7 @@ const Carousell = () => {
         >
           <div>
             <img
-              src="../project-1.png"
-              style={{ width: "100%", height: "375px" }}
-            />
+              src="../project-1.png" />
           </div>
         </a>
         <div>
